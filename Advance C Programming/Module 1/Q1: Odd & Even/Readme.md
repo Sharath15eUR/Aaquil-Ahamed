@@ -1,7 +1,7 @@
 # Q1: Write a C program to determine the given number is odd or even using Bitwise operators. 
 
 ### Approch
-Bitwise AND(&) operator the LSB and 1
+> Bitwise AND(&) operator the LSB and 1
 
 ### Solution
 ```C
