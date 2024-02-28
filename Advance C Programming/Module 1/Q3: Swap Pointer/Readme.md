@@ -1,7 +1,7 @@
 # Q3:  Write a C program to swap two numbers. Use a function pointer to do this operation. 
 
 ### Approch
-Swap function uses call by Reference and use a function pointer 
+> Swap function uses call by Reference and use a function pointer 
 
 ### Solution
 ```C
