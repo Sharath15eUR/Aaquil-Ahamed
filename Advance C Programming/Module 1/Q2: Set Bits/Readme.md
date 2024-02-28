@@ -2,7 +2,7 @@
 
 
 ### Approch
-Bitwise Rightshift(>>) operator the number with Bitwise And(&) operator until the number becomes 0
+> Bitwise Rightshift(>>) operator the number with Bitwise And(&) operator until the number becomes 0
 
 ### Solution
 ```C
