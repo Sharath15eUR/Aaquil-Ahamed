@@ -10,32 +10,37 @@ struct node
 };
 
 void removeduplicate(struct node* head){
-  struct node* temp = head;
-  while(temp->data != temp->next->data) temp = temp->next;
-  struct node* duplicate = temp->next;
-  temp->next = duplicate->next;
-  free(duplicate);
+  struct node* current = head;
+
+  while (current != NULL && current->next != NULL) {
+    if (current->data == current->next->data) {
+      struct node* duplicate = current->next;
+      current->next = duplicate->next;
+      free(duplicate);
+    } else {
+      current = current->next;
+    }
+  }
 }
 
-int main()
-{
+int main(){
   int choice;
   while(1)
   {
       printf("\n*****\n");
-      printf("0. Create\n");
-      printf("1. display\n");
-      printf("2. remove duplicate\n");
+      printf("1. Create\n");
+      printf("2. display\n");
+      printf("3. remove duplicate\n");
 
     printf("\n Enter your choice: ");
     scanf("%d",&choice);
     switch(choice)
     {
-      case 0: create();
+      case 1: create();
           break;
-      case 1: display();
+      case 2: display();
           break;
-      case 2: removeduplicate(head);
+      case 3: removeduplicate(head);
           break;
       default: printf("Invalid");
     }
