@@ -13,11 +13,17 @@ struct node
 };
 
 void removeduplicate(struct node* head){
-  struct node* temp = head;
-  while(temp->data != temp->next->data) temp = temp->next;
-  struct node* duplicate = temp->next;
-  temp->next = duplicate->next;
-  free(duplicate);
+  struct node* current = head;
+
+  while (current != NULL && current->next != NULL) {
+    if (current->data == current->next->data) {
+      struct node* duplicate = current->next;
+      current->next = duplicate->next;
+      free(duplicate);
+    } else {
+      current = current->next;
+    }
+  }
 }
 ```
 
