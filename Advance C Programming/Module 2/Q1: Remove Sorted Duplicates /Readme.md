@@ -28,4 +28,4 @@ void removeduplicate(struct node* head){
 ```
 
 ### Compiler/Environment
-Run it the online Compiler - [Remove_Sorted_Duplicates.C](https://replit.com/@AaquilAhamed/Module-2-Assignment#Q1:Remove%20Sorted%20Duplicates.c)
+Run it the online Compiler - [Remove_Sorted_Duplicates.C](https://replit.com/@AaquilAhamed/Q1-Remove-Sorted-Duplicates)
