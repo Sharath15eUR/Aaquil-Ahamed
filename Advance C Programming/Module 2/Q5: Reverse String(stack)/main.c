@@ -46,7 +46,7 @@ int main(void) {
     reverseString(string);
     printf("After Reverse : %s\n", string);
 
-    free(string); // Free dynamically allocated memory
+    free(string);
     return 0;
 }
 
